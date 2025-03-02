@@ -1,0 +1,99 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Login Fragment -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.plantify.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <!-- Register Fragment -->
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.plantify.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.plantify.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.plantify.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <action
+        android:id="@+id/action_profileFragment_to_loginFragment"
+        app:destination="@id/loginFragment"/>
+
+    <!-- Plant List Fragment -->
+    <fragment
+        android:id="@+id/plantListFragment"
+        android:name="com.example.plantify.PlantListFragment"
+        android:label="Plant Listings"
+        tools:layout="@layout/fragment_plant_list">
+
+
+        <action
+            android:id="@+id/action_plantListFragment_to_addPlantFragment"
+            app:destination="@id/addPlantFragment"/>
+
+        <action
+            android:id="@+id/action_plantListFragment_to_editPlantFragment"
+            app:destination="@id/editPlantFragment"/>
+    </fragment>
+
+    <!-- Add Plant Fragment -->
+    <fragment
+        android:id="@+id/addPlantFragment"
+        android:name="com.example.plantify.AddPlantFragment"
+        android:label="Add Plant"
+        tools:layout="@layout/fragment_add_plant">
+
+        <action
+            android:id="@+id/action_addPlantFragment_to_plantListFragment"
+            app:destination="@id/plantListFragment"/>
+    </fragment>
+
+    <!-- Edit Plant Fragment -->
+    <fragment
+        android:id="@+id/editPlantFragment"
+        android:name="com.example.plantify.EditPlantFragment"
+        android:label="Edit Plant"
+        tools:layout="@layout/fragment_edit_plant">
+
+        <action
+            android:id="@+id/action_editPlantFragment_to_plantListFragment"
+            app:destination="@id/plantListFragment"/>
+    </fragment>
+
+</navigation>

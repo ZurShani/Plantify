@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etPlantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant Name"/>
+
+    <EditText
+        android:id="@+id/etPlantDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plant Description"/>
+
+    <EditText
+        android:id="@+id/etPlantPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="number"
+        android:maxLength="6"/>
+
+    <Spinner
+        android:id="@+id/spPlantType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"/>
+
+    <ImageView
+        android:id="@+id/ivPlantImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitPlant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Plant"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

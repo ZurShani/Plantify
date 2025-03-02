@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivProfilePicture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_profile_placeholder"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@null"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etEditUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Username"/>
+
+    <Button
+        android:id="@+id/btnUpdateUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Username"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnChangeProfilePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Picture"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@drawable/button_bg"
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/ivPlantImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvPlantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvPlantDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/tvPlantType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: Unknown"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tvCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by: "
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tvPlantPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:paddingBottom="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/editDeleteLayout">
+
+        <Button
+            android:id="@+id/btnEditPlant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"/>
+
+        <Button
+            android:id="@+id/btnDeletePlant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  Plant List Content  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+    <!-- Floating Action Button (FAB) for Adding a New Plant -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddPlant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add New Plant"
+        app:backgroundTint="@color/dark_green"
+        app:tint="@color/white"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"/>
+
+    <!-- CreatedBy (Username) -->
+    <TextView
+        android:id="@+id/tvCreatedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by: Unknown"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="4dp"/>
+
+</FrameLayout>
